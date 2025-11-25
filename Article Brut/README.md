@@ -1,19 +1,40 @@
 # 📝 Articles Bruts
 
-Ce dossier contient vos articles en texte brut, rédigés sur Google Docs ou autre éditeur de texte.
+Ce dossier contient vos articles en texte brut, rédigés sur Google Docs ou autre éditeur de texte, organisés par projet.
 
 ## 📋 Utilisation
 
 Les articles stockés ici sont les **versions texte brut** avant transformation en HTML.
 
-## 📁 Organisation
+## 📁 Organisation par Projet
 
-Nommage recommandé : `[date]-[titre-court].[txt|md]`
+Les articles sont organisés dans des **sous-dossiers par projet/site** :
+
+```
+Article Brut/
+├── web-starting.fr/
+│   ├── 2024-11-25-cms-choisir-guide.txt
+│   ├── 2024-12-01-wordpress-vs-shopify.txt
+│   └── README.md
+├── autre-projet/
+│   ├── 2024-11-20-article-1.txt
+│   └── README.md
+└── README.md
+```
+
+### Projets Disponibles
+
+- **web-starting.fr** : Articles sur CMS, hébergement, création de sites
+- *(Ajoutez vos projets au fur et à mesure)*
+
+### Nommage dans un Projet
+
+Format recommandé : `[date]-[titre-court].[txt|md]`
 
 **Exemples** :
-- `2024-11-25-guide-plomberie-urgence.txt`
-- `2024-11-25-optimiser-seo-artisan.md`
-- `2024-11-26-choisir-electricien.txt`
+- `2024-11-25-cms-choisir-guide.txt`
+- `2024-12-01-wordpress-vs-shopify.md`
+- `2025-01-15-hebergement-comparatif.txt`
 
 ## 📝 Format du Contenu
 

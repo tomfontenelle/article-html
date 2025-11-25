@@ -7,23 +7,55 @@ Processus de génération d'articles optimisés pour WordPress à partir de cont
 ```
 article-html/
 ├── Template/               # Templates HTML de référence
+│   ├── web-starting.fr/   # Templates pour web-starting.fr
+│   └── [autre-projet]/    # Un dossier par projet
 ├── Article Brut/          # Articles bruts (texte depuis Google Docs)
+│   ├── web-starting.fr/   # Articles pour web-starting.fr
+│   └── [autre-projet]/    # Un dossier par projet
 ├── Article HTML généré/   # Articles HTML finaux générés
+│   ├── web-starting.fr/   # Articles générés pour web-starting.fr
+│   └── [autre-projet]/    # Un dossier par projet
 ├── PROMPT_TEMPLATE.md     # Template de prompt pour Claude IA
+├── GUIDE_UTILISATION.md   # Guide rapide d'utilisation
 └── README.md              # Ce fichier
 ```
 
+### 🎯 Organisation par Projets
+
+Pour faciliter la gestion de plusieurs sites/clients, chaque dossier principal (`Template`, `Article Brut`, `Article HTML généré`) est organisé en **sous-dossiers par projet**.
+
+**Avantages** :
+- Séparation claire entre les différents projets
+- Templates et articles facilement retrouvables
+- Meilleure organisation à long terme
+- Évite les confusions entre projets
+
+**Projets actuels** :
+- **web-starting.fr** : Articles sur CMS, hébergement, création de sites web
+
 ## 🚀 Processus de Génération
+
+### Étape 0 : Choisir/Créer un Projet
+
+Si c'est votre **premier article pour un nouveau projet** :
+1. Créer les sous-dossiers dans les 3 dossiers principaux :
+   - `Template/[nom-projet]/`
+   - `Article Brut/[nom-projet]/`
+   - `Article HTML généré/[nom-projet]/`
+2. Créer un template de base dans `Template/[nom-projet]/`
+3. Ajouter un README.md dans chaque sous-dossier avec les spécificités du projet
+
+Si c'est un article pour un **projet existant**, passer directement à l'étape 1.
 
 ### Étape 1 : Préparer le Contenu
 
 1. **Rédiger l'article** sur Google Docs
 2. **Copier le texte brut** de l'article
-3. **Enregistrer** le texte dans le dossier `Article Brut/` (format `.txt` ou `.md`)
+3. **Enregistrer** le texte dans `Article Brut/[nom-projet]/` (format `.txt` ou `.md`)
 
 ### Étape 2 : Choisir un Template
 
-1. Sélectionner un **template HTML** dans le dossier `Template/`
+1. Sélectionner un **template HTML** dans `Template/[nom-projet]/`
 2. Ce template servira de référence pour :
    - La structure HTML
    - Les styles CSS

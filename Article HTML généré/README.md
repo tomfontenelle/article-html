@@ -1,21 +1,42 @@
 # 🎨 Articles HTML Générés
 
-Ce dossier contient vos articles finaux en HTML, prêts pour intégration dans WordPress.
+Ce dossier contient vos articles finaux en HTML, prêts pour intégration dans WordPress, organisés par projet.
 
 ## 📋 Utilisation
 
 Les articles stockés ici sont les **versions HTML finales** générées par Claude IA, prêtes à être copiées dans un bloc HTML WordPress.
 
-## 📁 Organisation
+## 📁 Organisation par Projet
 
-Nommage recommandé : `[date]-[titre-court].html`
+Les articles sont organisés dans des **sous-dossiers par projet/site** :
+
+```
+Article HTML généré/
+├── web-starting.fr/
+│   ├── 2024-11-25-cms-choisir-guide.html
+│   ├── 2024-12-01-wordpress-vs-shopify.html
+│   └── README.md
+├── autre-projet/
+│   ├── 2024-11-20-article-1.html
+│   └── README.md
+└── README.md
+```
+
+### Projets Disponibles
+
+- **web-starting.fr** : Articles sur CMS, hébergement, création de sites
+- *(Ajoutez vos projets au fur et à mesure)*
+
+### Nommage dans un Projet
+
+Format recommandé : `[date]-[titre-court].html`
 
 **Exemples** :
-- `2024-11-25-guide-plomberie-urgence.html`
-- `2024-11-25-optimiser-seo-artisan.html`
-- `2024-11-26-choisir-electricien.html`
+- `2024-11-25-cms-choisir-guide.html`
+- `2024-12-01-wordpress-vs-shopify.html`
+- `2025-01-15-hebergement-comparatif.html`
 
-**Astuce** : Utilisez le même nom que l'article brut correspondant, en changeant l'extension pour `.html`
+**Astuce** : Utilisez le même nom que l'article brut correspondant, en changeant simplement l'extension pour `.html`
 
 ## ✅ Checklist avant Intégration WordPress
 
