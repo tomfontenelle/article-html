@@ -1,0 +1,880 @@
+<!--
+  TEMPLATE DE BASE POUR ARTICLES WORDPRESS
+  ========================================
+
+  Ce template respecte toutes les contraintes WordPress et bonnes pratiques :
+  - Classe racine .ws-scope pour isolation
+  - CSS avec all: revert
+  - JavaScript en IIFE
+  - EmailJS intégré
+  - Responsive mobile-first
+  - SEO-friendly (contenu visible sans JS)
+  - Accessibilité (WCAG AA)
+
+  Version: 1.0
+  Dernière mise à jour: 2025-11-25
+-->
+
+<!-- EmailJS CDN -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<!-- ARTICLE CONTENT -->
+<article class="ws-scope">
+
+  <!-- HEADER / HERO SECTION -->
+  <header class="ws-hero">
+    <div class="ws-container">
+      <h1 class="ws-title">Titre de l'Article</h1>
+      <p class="ws-subtitle">Sous-titre accrocheur qui résume l'article</p>
+      <div class="ws-meta">
+        <span class="ws-date">25 novembre 2024</span>
+        <span class="ws-separator">•</span>
+        <span class="ws-reading-time">5 min de lecture</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- SOMMAIRE INTERACTIF -->
+  <nav class="ws-toc" aria-label="Sommaire">
+    <div class="ws-container">
+      <h2 class="ws-toc-title">Sommaire</h2>
+      <ul class="ws-toc-list">
+        <li><a href="#section-1" class="ws-toc-link">Introduction</a></li>
+        <li><a href="#section-2" class="ws-toc-link">Section 1</a></li>
+        <li><a href="#section-3" class="ws-toc-link">Section 2</a></li>
+        <li><a href="#section-4" class="ws-toc-link">Section 3</a></li>
+        <li><a href="#section-5" class="ws-toc-link">Conclusion</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="ws-main">
+    <div class="ws-container">
+
+      <!-- INTRODUCTION -->
+      <section id="section-1" class="ws-section ws-fade-in">
+        <h2 class="ws-section-title">Introduction</h2>
+        <p class="ws-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p class="ws-text">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </section>
+
+      <!-- CTA 1 -->
+      <aside class="ws-cta ws-fade-in">
+        <div class="ws-cta-content">
+          <h3 class="ws-cta-title">Besoin d'aide professionnelle ?</h3>
+          <p class="ws-cta-text">Contactez nos experts pour un devis gratuit et personnalisé</p>
+          <a href="#contact" class="ws-btn ws-btn-primary">Demander un devis</a>
+        </div>
+      </aside>
+
+      <!-- SECTION 1 -->
+      <section id="section-2" class="ws-section ws-fade-in">
+        <h2 class="ws-section-title">Section 1</h2>
+        <p class="ws-text">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+
+        <h3 class="ws-subsection-title">Sous-section</h3>
+        <ul class="ws-list">
+          <li class="ws-list-item">Premier point important</li>
+          <li class="ws-list-item">Deuxième point important</li>
+          <li class="ws-list-item">Troisième point important</li>
+        </ul>
+      </section>
+
+      <!-- ENCADRÉ CONSEIL -->
+      <aside class="ws-tip ws-fade-in">
+        <div class="ws-tip-icon">💡</div>
+        <div class="ws-tip-content">
+          <h4 class="ws-tip-title">Conseil d'expert</h4>
+          <p class="ws-tip-text">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </aside>
+
+      <!-- SECTION 2 -->
+      <section id="section-3" class="ws-section ws-fade-in">
+        <h2 class="ws-section-title">Section 2</h2>
+        <p class="ws-text">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+        </p>
+
+        <div class="ws-highlight">
+          <p class="ws-highlight-text">
+            <strong>Point important :</strong> Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 3 -->
+      <section id="section-4" class="ws-section ws-fade-in">
+        <h2 class="ws-section-title">Section 3</h2>
+        <p class="ws-text">
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+        </p>
+
+        <ol class="ws-ordered-list">
+          <li class="ws-list-item">Première étape du processus</li>
+          <li class="ws-list-item">Deuxième étape du processus</li>
+          <li class="ws-list-item">Troisième étape du processus</li>
+        </ol>
+      </section>
+
+      <!-- CTA 2 -->
+      <aside class="ws-cta ws-cta-secondary ws-fade-in">
+        <div class="ws-cta-content">
+          <h3 class="ws-cta-title">Prêt à passer à l'action ?</h3>
+          <p class="ws-cta-text">Remplissez le formulaire ci-dessous pour être recontacté</p>
+          <a href="#contact" class="ws-btn ws-btn-secondary">Contactez-nous</a>
+        </div>
+      </aside>
+
+      <!-- CONCLUSION -->
+      <section id="section-5" class="ws-section ws-fade-in">
+        <h2 class="ws-section-title">Conclusion</h2>
+        <p class="ws-text">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
+        </p>
+        <p class="ws-text">
+          Quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FORMULAIRE DE CONTACT -->
+  <section id="contact" class="ws-contact">
+    <div class="ws-container">
+      <h2 class="ws-form-title">Contactez-nous</h2>
+      <p class="ws-form-subtitle">Remplissez ce formulaire et nous vous recontacterons rapidement</p>
+
+      <form id="ws-contact-form" class="ws-form">
+        <!-- Honeypot anti-spam (hidden) -->
+        <input type="text" name="honeypot" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div class="ws-form-group">
+          <label for="ws-name" class="ws-label">Nom complet *</label>
+          <input
+            type="text"
+            id="ws-name"
+            name="user_name"
+            class="ws-input"
+            required
+            placeholder="Votre nom"
+            aria-required="true"
+          >
+        </div>
+
+        <div class="ws-form-group">
+          <label for="ws-email" class="ws-label">Email *</label>
+          <input
+            type="email"
+            id="ws-email"
+            name="user_email"
+            class="ws-input"
+            required
+            placeholder="votre@email.com"
+            aria-required="true"
+          >
+        </div>
+
+        <div class="ws-form-group">
+          <label for="ws-phone" class="ws-label">Téléphone</label>
+          <input
+            type="tel"
+            id="ws-phone"
+            name="user_phone"
+            class="ws-input"
+            placeholder="06 12 34 56 78"
+          >
+        </div>
+
+        <div class="ws-form-group">
+          <label for="ws-message" class="ws-label">Message *</label>
+          <textarea
+            id="ws-message"
+            name="message"
+            class="ws-textarea"
+            required
+            rows="5"
+            placeholder="Décrivez votre projet ou posez votre question..."
+            aria-required="true"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="ws-btn ws-btn-submit">
+          <span class="ws-btn-text">Envoyer</span>
+          <span class="ws-btn-loader" style="display:none;">Envoi en cours...</span>
+        </button>
+
+        <div id="ws-form-message" class="ws-form-feedback" style="display:none;"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="ws-footer">
+    <div class="ws-container">
+      <p class="ws-footer-text">© 2024 - Tous droits réservés</p>
+    </div>
+  </footer>
+
+</article>
+
+<!-- STYLES CSS -->
+<style>
+  /* ============================================
+     RESET & BASE STYLES
+     ============================================ */
+  .ws-scope {
+    all: revert;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: #fff;
+  }
+
+  .ws-scope *,
+  .ws-scope *::before,
+  .ws-scope *::after {
+    box-sizing: border-box;
+  }
+
+  /* ============================================
+     CONTAINER & LAYOUT
+     ============================================ */
+  .ws-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* ============================================
+     TYPOGRAPHY
+     ============================================ */
+  .ws-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 1rem 0;
+    color: #1a1a1a;
+  }
+
+  .ws-subtitle {
+    font-size: 1.25rem;
+    color: #666;
+    margin: 0 0 1.5rem 0;
+    font-weight: 400;
+  }
+
+  .ws-section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    color: #1a1a1a;
+  }
+
+  .ws-subsection-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.75rem 0;
+    color: #333;
+  }
+
+  .ws-text {
+    margin: 0 0 1rem 0;
+    font-size: 1.0625rem;
+    color: #444;
+  }
+
+  /* ============================================
+     HERO SECTION
+     ============================================ */
+  .ws-hero {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    text-align: center;
+  }
+
+  .ws-hero .ws-title,
+  .ws-hero .ws-subtitle {
+    color: #fff;
+  }
+
+  .ws-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+
+  .ws-separator {
+    opacity: 0.6;
+  }
+
+  /* ============================================
+     TABLE OF CONTENTS (SOMMAIRE)
+     ============================================ */
+  .ws-toc {
+    background: #f8f9fa;
+    padding: 2rem 0;
+    border-top: 3px solid #667eea;
+    border-bottom: 3px solid #667eea;
+    margin: 2rem 0;
+  }
+
+  .ws-toc-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    color: #1a1a1a;
+  }
+
+  .ws-toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .ws-toc-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    background: #fff;
+    color: #667eea;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+
+  .ws-toc-link:hover,
+  .ws-toc-link:focus {
+    background: #667eea;
+    color: #fff;
+    border-color: #667eea;
+    transform: translateX(5px);
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+  }
+
+  /* ============================================
+     MAIN CONTENT
+     ============================================ */
+  .ws-main {
+    padding: 3rem 0;
+  }
+
+  .ws-section {
+    margin-bottom: 3rem;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ============================================
+     LISTS
+     ============================================ */
+  .ws-list,
+  .ws-ordered-list {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .ws-list-item {
+    margin: 0.5rem 0;
+    color: #444;
+  }
+
+  /* ============================================
+     CTA BLOCKS
+     ============================================ */
+  .ws-cta {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    margin: 3rem 0;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  }
+
+  .ws-cta-secondary {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    box-shadow: 0 10px 30px rgba(245, 87, 108, 0.3);
+  }
+
+  .ws-cta-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: #fff;
+  }
+
+  .ws-cta-text {
+    font-size: 1.125rem;
+    margin: 0 0 1.5rem 0;
+    opacity: 0.95;
+  }
+
+  /* ============================================
+     BUTTONS
+     ============================================ */
+  .ws-btn {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+  }
+
+  .ws-btn-primary {
+    background: #fff;
+    color: #667eea;
+  }
+
+  .ws-btn-primary:hover,
+  .ws-btn-primary:focus {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+
+  .ws-btn-secondary {
+    background: #fff;
+    color: #f5576c;
+  }
+
+  .ws-btn-secondary:hover,
+  .ws-btn-secondary:focus {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .ws-btn-submit {
+    background: #667eea;
+    color: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+  }
+
+  .ws-btn-submit:hover,
+  .ws-btn-submit:focus {
+    background: #5568d3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+  }
+
+  .ws-btn-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  /* ============================================
+     TIP BOX (ENCADRÉ CONSEIL)
+     ============================================ */
+  .ws-tip {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: #fffbea;
+    border-left: 4px solid #f59e0b;
+    border-radius: 8px;
+    margin: 2rem 0;
+  }
+
+  .ws-tip-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+  }
+
+  .ws-tip-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    color: #92400e;
+  }
+
+  .ws-tip-text {
+    margin: 0;
+    color: #78350f;
+  }
+
+  /* ============================================
+     HIGHLIGHT BOX
+     ============================================ */
+  .ws-highlight {
+    padding: 1.5rem;
+    background: #f0f9ff;
+    border-left: 4px solid #0ea5e9;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+  }
+
+  .ws-highlight-text {
+    margin: 0;
+    color: #0c4a6e;
+  }
+
+  /* ============================================
+     CONTACT FORM
+     ============================================ */
+  .ws-contact {
+    background: #f8f9fa;
+    padding: 4rem 0;
+    margin-top: 4rem;
+  }
+
+  .ws-form-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 0.5rem 0;
+    color: #1a1a1a;
+  }
+
+  .ws-form-subtitle {
+    text-align: center;
+    color: #666;
+    margin: 0 0 2rem 0;
+    font-size: 1.125rem;
+  }
+
+  .ws-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .ws-form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .ws-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .ws-input,
+  .ws-textarea {
+    width: 100%;
+    padding: 0.875rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+  }
+
+  .ws-input:focus,
+  .ws-textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  }
+
+  .ws-input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset;
+    -webkit-text-fill-color: #333;
+  }
+
+  .ws-textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .ws-form-feedback {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .ws-form-feedback.success {
+    background: #d1fae5;
+    color: #065f46;
+    border: 1px solid #10b981;
+  }
+
+  .ws-form-feedback.error {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #ef4444;
+  }
+
+  /* ============================================
+     FOOTER
+     ============================================ */
+  .ws-footer {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .ws-footer-text {
+    margin: 0;
+    opacity: 0.8;
+  }
+
+  /* ============================================
+     ANIMATIONS
+     ============================================ */
+  .ws-fade-in {
+    animation: wsFadeIn 0.6s ease-out;
+  }
+
+  @keyframes wsFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* ============================================
+     RESPONSIVE - TABLET
+     ============================================ */
+  @media (max-width: 1024px) {
+    .ws-container {
+      padding: 0 16px;
+    }
+
+    .ws-title {
+      font-size: 2rem;
+    }
+
+    .ws-section-title {
+      font-size: 1.75rem;
+    }
+  }
+
+  /* ============================================
+     RESPONSIVE - MOBILE
+     ============================================ */
+  @media (max-width: 768px) {
+    .ws-title {
+      font-size: 1.75rem;
+    }
+
+    .ws-subtitle {
+      font-size: 1.125rem;
+    }
+
+    .ws-section-title {
+      font-size: 1.5rem;
+    }
+
+    .ws-hero {
+      padding: 2rem 0;
+    }
+
+    .ws-toc {
+      padding: 1.5rem 0;
+    }
+
+    .ws-toc-list {
+      grid-template-columns: 1fr;
+    }
+
+    .ws-main {
+      padding: 2rem 0;
+    }
+
+    .ws-cta {
+      padding: 2rem 1.5rem;
+    }
+
+    .ws-cta-title {
+      font-size: 1.5rem;
+    }
+
+    .ws-tip {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .ws-form {
+      padding: 1.5rem;
+    }
+
+    .ws-meta {
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .ws-separator {
+      display: none;
+    }
+  }
+
+  /* ============================================
+     ACCESSIBILITY
+     ============================================ */
+  @media (prefers-reduced-motion: reduce) {
+    .ws-scope * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Focus visible for keyboard navigation */
+  .ws-scope *:focus-visible {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+  }
+</style>
+
+<!-- JAVASCRIPT -->
+<script>
+(function() {
+  'use strict';
+
+  /* ============================================
+     EMAILJS INITIALIZATION
+     ============================================ */
+  if (typeof emailjs !== 'undefined') {
+    emailjs.init('YOUR_PUBLIC_KEY'); // Remplacer par votre clé publique EmailJS
+  }
+
+  /* ============================================
+     SMOOTH SCROLL FOR TOC LINKS
+     ============================================ */
+  const tocLinks = document.querySelectorAll('.ws-scope .ws-toc-link');
+
+  tocLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetSection = document.querySelector('.ws-scope ' + targetId);
+
+      if (targetSection) {
+        const offset = 80; // Offset pour le header sticky si applicable
+        const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - offset;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  /* ============================================
+     FORM SUBMISSION WITH EMAILJS
+     ============================================ */
+  const contactForm = document.getElementById('ws-contact-form');
+  const formMessage = document.getElementById('ws-form-message');
+  const btnText = document.querySelector('.ws-scope .ws-btn-text');
+  const btnLoader = document.querySelector('.ws-scope .ws-btn-loader');
+  const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Anti-spam honeypot check
+    const honeypot = contactForm.querySelector('input[name="honeypot"]');
+    if (honeypot && honeypot.value !== '') {
+      return; // Bot detected, silent fail
+    }
+
+    // Check if EmailJS is available
+    if (typeof emailjs === 'undefined') {
+      showMessage('Erreur : Le service d\'envoi d\'email n\'est pas disponible.', 'error');
+      return;
+    }
+
+    // Disable submit button
+    submitBtn.disabled = true;
+    btnText.style.display = 'none';
+    btnLoader.style.display = 'inline';
+
+    // Send email
+    emailjs.sendForm('service_btbtgzn', 'template_m06wtf1', contactForm)
+      .then(function(response) {
+        showMessage('Message envoyé avec succès ! Nous vous recontacterons rapidement.', 'success');
+        contactForm.reset();
+      }, function(error) {
+        showMessage('Erreur lors de l\'envoi du message. Veuillez réessayer.', 'error');
+        console.error('EmailJS error:', error);
+      })
+      .finally(function() {
+        // Re-enable submit button
+        submitBtn.disabled = false;
+        btnText.style.display = 'inline';
+        btnLoader.style.display = 'none';
+      });
+  });
+
+  function showMessage(message, type) {
+    formMessage.textContent = message;
+    formMessage.className = 'ws-form-feedback ' + type;
+    formMessage.style.display = 'block';
+
+    // Hide message after 5 seconds
+    setTimeout(function() {
+      formMessage.style.display = 'none';
+    }, 5000);
+  }
+
+  /* ============================================
+     SCROLL ANIMATIONS (OPTIONAL)
+     ============================================ */
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('ws-fade-in');
+      }
+    });
+  }, observerOptions);
+
+  // Observe all sections (optional enhancement)
+  // Uncomment if you want sections to animate on scroll
+  /*
+  const sections = document.querySelectorAll('.ws-scope .ws-section, .ws-scope .ws-cta, .ws-scope .ws-tip');
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+  */
+
+})();
+</script>
